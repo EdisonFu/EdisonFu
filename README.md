@@ -65,6 +65,21 @@ research direction  →  literature retrieval  →  factor hypothesis
 
 ---
 
+### Contact
+
+Open to conversations about quant research, factor pipelines, and trading infrastructure.
+
+<p align="center">
+  <a href="mailto:fuzhendong1995@gmail.com">
+    <img src="https://img.shields.io/badge/fuzhendong1995%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://github.com/EdisonFu">
+    <img src="https://img.shields.io/badge/@EdisonFu-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
+
+---
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=EdisonFu&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=github_dark&hide_title=true" height="150" alt="GitHub stats">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EdisonFu&layout=compact&hide_border=true&langs_count=8&theme=github_dark&hide_title=true" height="150" alt="Top languages">
