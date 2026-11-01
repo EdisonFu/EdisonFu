@@ -41,11 +41,11 @@ research direction  →  literature retrieval  →  factor hypothesis
 | | |
 |---|---|
 | **[autoalpha](https://github.com/EdisonFu/autoalpha)** | Multi-agent factor mining pipeline. Takes a research direction, retrieves papers across arXiv/OpenAlex/Crossref, extracts factor hypotheses, generates and sandboxes the code, then gates on two-stage IS/OOS. Web console over FastAPI + SSE. <br> `Python` `FastAPI` `LLM agents` |
+| **[auto-trade](https://github.com/EdisonFu/auto-trade)** | Automated order placement for the macOS build of a Chinese retail brokerage terminal, driven by the macOS Accessibility API — no Windows VM, no OCR, no simulated clicks. The native Cocoa UI reads back as a structured control tree, so state is verifiable instead of guessed. <br> `Python` `macOS AX` `automation` |
+| **[ICEEMDAN-TCN-FU](https://github.com/EdisonFu/ICEEMDAN-TCN-FU)** | Time-series forecasting by ICEEMDAN decomposition, with a TCN fit per intrinsic mode. <br> `Python` `TCN` |
 | **[autopaper](https://github.com/EdisonFu/autopaper)** | Turns financial papers and research notes into backtestable strategies, then derives variants to build an IS/OOS-validated alpha library. <br> `Python` `LLM agents` |
 | **[stock-alpha](https://github.com/EdisonFu/stock-alpha)** | Full-stack alpha pipeline: minute-bar feature synthesis, IC-based factor selection, GRU + XGBoost hybrid for return prediction. <br> `Python` `PyTorch` `XGBoost` |
-| **[ICEEMDAN-TCN-FU](https://github.com/EdisonFu/ICEEMDAN-TCN-FU)** | Time-series forecasting by ICEEMDAN decomposition, with a TCN fit per intrinsic mode. <br> `Python` `TCN` |
-| **[wechat-auth](https://github.com/EdisonFu/wechat-auth)** | Authentication gateway for WeChat Mini Programs. <br> `Go` `Docker` |
-| **[pod-controller](https://github.com/EdisonFu/pod-controller)** | Custom Kubernetes controller for pod lifecycle management. <br> `Go` `Kubernetes` |
+| **[stock_prediction_cnn](https://github.com/EdisonFu/stock_prediction_cnn)** | Predicting stock direction with convolutional networks over price-series inputs. <br> `Python` `CNN` |
 
 ---
 
