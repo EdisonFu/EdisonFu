@@ -1,18 +1,18 @@
 <h1 align="center">EdisonFu</h1>
 
 <p align="center">
-  <b>Quantitative research & trading infrastructure.</b><br>
-  Factor mining · multi-agent LLM pipelines · Go backends
+  <b>Quantitative trading research & infrastructure.</b><br>
+  Quant research · LLM agent systems · AI infra · cloud native
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/XGBoost-337AB7?style=flat-square" alt="XGBoost">
-  <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/LLM%20Agents-6E56CF?style=flat-square" alt="LLM Agents">
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Istio-466BB0?style=flat-square&logo=istio&logoColor=white" alt="Istio">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 </p>
 
@@ -20,18 +20,30 @@
 
 ### What I work on
 
-I build the machinery that turns a research idea into a factor you can actually
-trade — and the discipline that stops it from lying to you.
+My work spans two ends of the same problem. **Above:** quantitative research —
+factor mining, signal construction, strategy validation, live execution.
+**Below:** the infrastructure that holds it up — making the research loop run
+itself, run fast, and return results worth believing.
 
-Most of my work sits on one principle: **a backtest is a claim about the future,
-so the pipeline has to be built to fail loudly.** Point-in-time data, structural
-IS/OOS separation, thresholds derived from sample size instead of hardcoded,
-transaction costs in from day one. An elegant result that leaked is worth less
-than a mediocre one that didn't.
+The current focus is **rebuilding that research loop around LLM agents.** The
+chain from reading a paper to a validated factor used to be strung together by
+hand; it now decomposes into agents that specialize — retrieval, hypothesis
+extraction, code generation, sandboxed execution, quality gating — and run
+end to end. The bottleneck in research was never a shortage of ideas; it was
+how fast you can disprove them. That is what the pipeline attacks.
+
+On the engineering side I've built Go microservices, custom Kubernetes
+controllers, and service-mesh observability. That experience feeds straight
+back into AI infrastructure: concurrency orchestration, sandbox isolation,
+cost control and failure visibility in an agent system are still distributed
+systems problems — the unit of execution is just a model call instead of a
+process.
 
 ```
-research direction  →  literature retrieval  →  factor hypothesis
-                    →  code generation  →  IS/OOS gating  →  factor library
+Quant research   factor mining · signal construction · validation · execution
+LLM agents       multi-agent orchestration · codegen · sandboxing · gating
+AI infra         concurrency scheduling · cost control · observability
+Cloud native     Go microservices · Kubernetes controllers · service mesh
 ```
 
 ---
@@ -49,25 +61,9 @@ research direction  →  literature retrieval  →  factor hypothesis
 
 ---
 
-### Things I've learned the expensive way
-
-- **Silent degradation is the costliest bug class.** A fallback that returns an
-  empty value doesn't read as "parsing failed" — it reads as "the feature is
-  gone." Failures have to be visible.
-- **Hardcoded thresholds carry hidden couplings.** A cutoff tuned on 24 symbols
-  was 2.3× too strict at 117, and nothing in the code recorded the dependency.
-  Derive from the data.
-- **Leakage survives any statistical correction.** The only real defense is
-  structural: the split holds the data, not the caller's good intentions.
-- **When the numbers look clean, suspect the harness.** A benchmark script that
-  silently connected to a stale instance produced perfectly plausible,
-  completely meaningless results — twice.
-
----
-
 ### Contact
 
-Open to conversations about quant research, factor pipelines, and trading infrastructure.
+Open to conversations about quant research, LLM agent systems, and AI infrastructure.
 
 <p align="center">
   <a href="mailto:fuzhendong1995@gmail.com">
